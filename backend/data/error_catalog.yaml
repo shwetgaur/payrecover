@@ -1,0 +1,215 @@
+# Razorpay-native failure catalog.
+# Rules own the diagnosis class when error_reason / event is known.
+# Groq only writes rationale, or classifies when no rule matches.
+# LLM never bypasses the policy gate.
+
+version: 1
+
+never_retry_reasons:
+  - stolen_or_lost_card
+  - stolen_card
+  - suspected_fraud
+  - payment_fraud
+  - bank_account_blocked
+  - blocked_card
+  - lost_card
+
+already_resolved_reasons:
+  - payment_already_processed
+  - duplicate_payment
+
+rules:
+  - id: checkout_abandoned
+    when:
+      source_event: checkout.abandoned
+    class: checkout_abandoned
+    confidence: high
+    default_action: issue_payment_link
+    cooldown_minutes: 30
+    rationale: Checkout started but no payment.captured followed. Recover with a Payment Link, not an auto-debit.
+
+  - id: subscription_halted
+    when:
+      source_event: subscription.halted
+    class: subscription_halted
+    confidence: high
+    default_action: escalate_human
+    cooldown_minutes: 0
+    rationale: Razorpay retries are exhausted. Auto-charge will not run. Escalate and send an update-method link.
+
+  - id: subscription_pending
+    when:
+      source_event: subscription.pending
+    class: subscription_pending
+    confidence: high
+    default_action: retry_same_method
+    cooldown_minutes: 1440
+    rationale: Subscription is pending after a failed auto-charge. One bounded retry is allowed; do not hammer.
+
+  - id: already_captured
+    when:
+      notes_flag: already_captured
+    class: already_resolved
+    confidence: high
+    default_action: stop
+    cooldown_minutes: 0
+    rationale: A later captured payment exists for this order. No recovery action.
+
+  - id: already_resolved_reason
+    when:
+      error_reason:
+        - payment_already_processed
+        - duplicate_payment
+    class: already_resolved
+    confidence: high
+    default_action: stop
+    cooldown_minutes: 0
+    rationale: Duplicate or already-processed payment. Stop.
+
+  - id: do_not_retry
+    when:
+      error_reason:
+        - stolen_or_lost_card
+        - stolen_card
+        - suspected_fraud
+        - payment_fraud
+        - bank_account_blocked
+        - blocked_card
+        - lost_card
+    class: do_not_retry
+    confidence: high
+    default_action: stop
+    cooldown_minutes: 0
+    rationale: Instrument or fraud signal. Retry is forbidden. Stop and escalate to risk/ops.
+
+  - id: mandate_revoked
+    when:
+      error_reason:
+        - mandate_revoked
+        - cancelled_by_customer
+        - emandate_cancelled
+    class: mandate_revoked
+    confidence: high
+    default_action: escalate_human
+    cooldown_minutes: 0
+    rationale: Customer cancelled the mandate. Auto-retry would be non-compliant. Human + hosted update page.
+
+  - id: upi_timeout
+    when:
+      method: upi
+      error_reason:
+        - gateway_technical_error
+        - gateway_error
+        - payment_timed_out
+        - upi_timeout
+    class: upi_timeout
+    confidence: high
+    default_action: retry_same_method
+    cooldown_minutes: 15
+    rationale: Transient UPI/gateway timeout. Retry the same method after a 15-minute cooldown, or offer switch-UPI.
+
+  - id: insufficient_funds
+    when:
+      error_reason:
+        - insufficient_funds
+        - low_balance
+        - insufficient_balance
+    class: insufficient_funds
+    confidence: high
+    default_action: schedule_delay_retry
+    cooldown_minutes: 2160
+    rationale: Balance failure. Immediate retry recovers poorly. Delay into a payday window (24–72h).
+
+  - id: card_declined
+    when:
+      method: card
+      error_reason:
+        - card_declined
+        - issuer_declined
+        - do_not_honor
+        - transaction_not_allowed
+    class: card_declined
+    confidence: high
+    default_action: issue_payment_link
+    cooldown_minutes: 60
+    rationale: Issuer declined the card. Do not loop the same PAN. Issue a Payment Link so the customer can switch method.
+
+  - id: auth_failed
+    when:
+      error_reason:
+        - invalid_otp
+        - incorrect_otp
+        - authentication_failed
+        - user_dropped_authentication
+    class: auth_failed
+    confidence: high
+    default_action: email_nudge
+    cooldown_minutes: 30
+    rationale: Customer-side auth failure. Nudge only — never auto-debit.
+
+  - id: expired_instrument
+    when:
+      error_reason:
+        - expired_card
+        - card_expired
+        - invalid_expiry
+    class: expired_instrument
+    confidence: high
+    default_action: update_mandate
+    cooldown_minutes: 0
+    rationale: Instrument is dead. Ask the customer to update card or mandate.
+
+recovery_probability:
+  upi_timeout:
+    retry_same_method: 0.62
+    switch_method_upi: 0.55
+    issue_payment_link: 0.44
+    whatsapp_nudge: 0.36
+    email_nudge: 0.28
+  insufficient_funds:
+    schedule_delay_retry: 0.48
+    retry_same_method: 0.08
+    whatsapp_nudge: 0.22
+    email_nudge: 0.18
+    issue_payment_link: 0.31
+  card_declined:
+    issue_payment_link: 0.41
+    switch_method_upi: 0.38
+    email_nudge: 0.24
+    whatsapp_nudge: 0.30
+    retry_same_method: 0.11
+  auth_failed:
+    whatsapp_nudge: 0.44
+    email_nudge: 0.35
+    issue_payment_link: 0.40
+    retry_same_method: 0.05
+  expired_instrument:
+    update_mandate: 0.50
+    issue_payment_link: 0.46
+    email_nudge: 0.27
+  mandate_revoked:
+    escalate_human: 0.0
+    update_mandate: 0.0
+    retry_same_method: 0.0
+  checkout_abandoned:
+    issue_payment_link: 0.38
+    whatsapp_nudge: 0.33
+    email_nudge: 0.25
+  subscription_pending:
+    retry_same_method: 0.40
+    update_mandate: 0.36
+    issue_payment_link: 0.34
+  subscription_halted:
+    escalate_human: 0.0
+    update_mandate: 0.29
+    issue_payment_link: 0.27
+  do_not_retry:
+    stop: 0.0
+    retry_same_method: 0.0
+  already_resolved:
+    stop: 0.0
+
+forbidden_actions:
+  do_not_retry: [retry_same_method, switch_method_upi, schedule_delay_retry, whatsapp_nudge]
+  mandate_revoked: [retry_same_method, switch_method_upi, schedule_delay_retry]
+  already_resolved: [retry_same_method, switch_method_upi, schedule_delay_retry, issue_payment_link, whatsapp_nudge, email_nudge, update_mandate]

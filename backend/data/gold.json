@@ -1,0 +1,448 @@
+{
+  "evt_UT01": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT02": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT03": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT04": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT05": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT06": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT07": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT08": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT09": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT10": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT11": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_UT12": {
+    "class": "upi_timeout",
+    "allow_actions": [
+      "retry_same_method",
+      "switch_method_upi",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_NSF01": {
+    "class": "insufficient_funds",
+    "allow_actions": [
+      "schedule_delay_retry",
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_NSF02": {
+    "class": "insufficient_funds",
+    "allow_actions": [
+      "schedule_delay_retry",
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_NSF03": {
+    "class": "insufficient_funds",
+    "allow_actions": [
+      "schedule_delay_retry",
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_NSF04": {
+    "class": "insufficient_funds",
+    "allow_actions": [
+      "schedule_delay_retry",
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_NSF05": {
+    "class": "insufficient_funds",
+    "allow_actions": [
+      "schedule_delay_retry",
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_NSF06": {
+    "class": "insufficient_funds",
+    "allow_actions": [
+      "schedule_delay_retry",
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_NSF07": {
+    "class": "insufficient_funds",
+    "allow_actions": [
+      "schedule_delay_retry",
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_NSF08": {
+    "class": "insufficient_funds",
+    "allow_actions": [
+      "schedule_delay_retry",
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_CD01": {
+    "class": "card_declined",
+    "allow_actions": [
+      "issue_payment_link",
+      "switch_method_upi",
+      "email_nudge",
+      "whatsapp_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_CD02": {
+    "class": "card_declined",
+    "allow_actions": [
+      "issue_payment_link",
+      "switch_method_upi",
+      "email_nudge",
+      "whatsapp_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_CD03": {
+    "class": "card_declined",
+    "allow_actions": [
+      "issue_payment_link",
+      "switch_method_upi",
+      "email_nudge",
+      "whatsapp_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_CD04": {
+    "class": "card_declined",
+    "allow_actions": [
+      "issue_payment_link",
+      "switch_method_upi",
+      "email_nudge",
+      "whatsapp_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_CD05": {
+    "class": "card_declined",
+    "allow_actions": [
+      "issue_payment_link",
+      "switch_method_upi",
+      "email_nudge",
+      "whatsapp_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_CD06": {
+    "class": "card_declined",
+    "allow_actions": [
+      "issue_payment_link",
+      "switch_method_upi",
+      "email_nudge",
+      "whatsapp_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_OTP01": {
+    "class": "auth_failed",
+    "allow_actions": [
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_OTP02": {
+    "class": "auth_failed",
+    "allow_actions": [
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_OTP03": {
+    "class": "auth_failed",
+    "allow_actions": [
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_OTP04": {
+    "class": "auth_failed",
+    "allow_actions": [
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_OTP05": {
+    "class": "auth_failed",
+    "allow_actions": [
+      "email_nudge",
+      "whatsapp_nudge",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_AB01": {
+    "class": "checkout_abandoned",
+    "allow_actions": [
+      "issue_payment_link",
+      "whatsapp_nudge",
+      "email_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_AB02": {
+    "class": "checkout_abandoned",
+    "allow_actions": [
+      "issue_payment_link",
+      "whatsapp_nudge",
+      "email_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_AB03": {
+    "class": "checkout_abandoned",
+    "allow_actions": [
+      "issue_payment_link",
+      "whatsapp_nudge",
+      "email_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_AB04": {
+    "class": "checkout_abandoned",
+    "allow_actions": [
+      "issue_payment_link",
+      "whatsapp_nudge",
+      "email_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_AB05": {
+    "class": "checkout_abandoned",
+    "allow_actions": [
+      "issue_payment_link",
+      "whatsapp_nudge",
+      "email_nudge"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_SP01": {
+    "class": "subscription_pending",
+    "allow_actions": [
+      "retry_same_method",
+      "update_mandate",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_SP02": {
+    "class": "subscription_pending",
+    "allow_actions": [
+      "retry_same_method",
+      "update_mandate",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_SP03": {
+    "class": "subscription_pending",
+    "allow_actions": [
+      "retry_same_method",
+      "update_mandate",
+      "issue_payment_link"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_SH01": {
+    "class": "subscription_halted",
+    "allow_actions": [
+      "escalate_human",
+      "update_mandate",
+      "issue_payment_link"
+    ],
+    "bucket": "escalate"
+  },
+  "evt_SH02": {
+    "class": "subscription_halted",
+    "allow_actions": [
+      "escalate_human",
+      "update_mandate",
+      "issue_payment_link"
+    ],
+    "bucket": "escalate"
+  },
+  "evt_MR01": {
+    "class": "mandate_revoked",
+    "allow_actions": [
+      "escalate_human"
+    ],
+    "bucket": "escalate"
+  },
+  "evt_MR02": {
+    "class": "mandate_revoked",
+    "allow_actions": [
+      "escalate_human"
+    ],
+    "bucket": "escalate"
+  },
+  "evt_MR03": {
+    "class": "mandate_revoked",
+    "allow_actions": [
+      "escalate_human"
+    ],
+    "bucket": "escalate"
+  },
+  "evt_DNR01": {
+    "class": "do_not_retry",
+    "allow_actions": [
+      "stop"
+    ],
+    "bucket": "policy_stop"
+  },
+  "evt_DNR02": {
+    "class": "do_not_retry",
+    "allow_actions": [
+      "stop"
+    ],
+    "bucket": "policy_stop"
+  },
+  "evt_DNR03": {
+    "class": "do_not_retry",
+    "allow_actions": [
+      "stop"
+    ],
+    "bucket": "policy_stop"
+  },
+  "evt_AR01": {
+    "class": "already_resolved",
+    "allow_actions": [
+      "stop"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_AR02": {
+    "class": "already_resolved",
+    "allow_actions": [
+      "stop"
+    ],
+    "bucket": "recommend"
+  },
+  "evt_AR03": {
+    "class": "already_resolved",
+    "allow_actions": [
+      "stop"
+    ],
+    "bucket": "recommend"
+  }
+}

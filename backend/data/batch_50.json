@@ -1,0 +1,2781 @@
+[
+  {
+    "id": "evt_UT01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT01",
+          "entity": "payment",
+          "amount": 19900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT01",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "D2C snack box",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "aarav@okicici",
+          "email": "aarav@example.com",
+          "contact": "+919811000001",
+          "notes": {
+            "customer_id": "cust_UT01",
+            "product": "D2C snack box",
+            "customer_name": "Aarav Shah",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT02",
+          "entity": "payment",
+          "amount": 49900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT02",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Yoga membership",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "diya@okaxis",
+          "email": "diya@example.com",
+          "contact": "+919811000002",
+          "notes": {
+            "customer_id": "cust_UT02",
+            "product": "Yoga membership",
+            "customer_name": "Diya Mehta",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT03",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT03",
+          "entity": "payment",
+          "amount": 129900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT03",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Online course",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "kabir@ybl",
+          "email": "kabir@example.com",
+          "contact": "+919811000003",
+          "notes": {
+            "customer_id": "cust_UT03",
+            "product": "Online course",
+            "customer_name": "Kabir Iyer",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT04",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT04",
+          "entity": "payment",
+          "amount": 79900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT04",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "SaaS monthly",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "ananya@oksbi",
+          "email": "ananya@example.com",
+          "contact": "+919811000004",
+          "notes": {
+            "customer_id": "cust_UT04",
+            "product": "SaaS monthly",
+            "customer_name": "Ananya Rao",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT05",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT05",
+          "entity": "payment",
+          "amount": 24900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT05",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Clinic copay",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "ishaan@paytm",
+          "email": "ishaan@example.com",
+          "contact": "+919811000005",
+          "notes": {
+            "customer_id": "cust_UT05",
+            "product": "Clinic copay",
+            "customer_name": "Ishaan Kapoor",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT06",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT06",
+          "entity": "payment",
+          "amount": 349900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT06",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Annual plan",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "meera@okhdfcbank",
+          "email": "meera@example.com",
+          "contact": "+919811000006",
+          "notes": {
+            "customer_id": "cust_UT06",
+            "product": "Annual plan",
+            "customer_name": "Meera Nair",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT07",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT07",
+          "entity": "payment",
+          "amount": 9900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT07",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Add-on seat",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "rohan@ibl",
+          "email": "rohan@example.com",
+          "contact": "+919811000007",
+          "notes": {
+            "customer_id": "cust_UT07",
+            "product": "Add-on seat",
+            "customer_name": "Rohan Gupta",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT08",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT08",
+          "entity": "payment",
+          "amount": 159900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT08",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Flight hold",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "sara@okicici",
+          "email": "sara@example.com",
+          "contact": "+919811000008",
+          "notes": {
+            "customer_id": "cust_UT08",
+            "product": "Flight hold",
+            "customer_name": "Sara Khan",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT09",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT09",
+          "entity": "payment",
+          "amount": 59900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT09",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Gym quarterly",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "vikram@okaxis",
+          "email": "vikram@example.com",
+          "contact": "+919811000009",
+          "notes": {
+            "customer_id": "cust_UT09",
+            "product": "Gym quarterly",
+            "customer_name": "Vikram Joshi",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT10",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT10",
+          "entity": "payment",
+          "amount": 219900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT10",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Laptop EMI down",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "priya@ybl",
+          "email": "priya@example.com",
+          "contact": "+919811000010",
+          "notes": {
+            "customer_id": "cust_UT10",
+            "product": "Laptop EMI down",
+            "customer_name": "Priya Desai",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT11",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT11",
+          "entity": "payment",
+          "amount": 39900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT11",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Prepaid wallet",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "arjun@oksbi",
+          "email": "arjun@example.com",
+          "contact": "+919811000011",
+          "notes": {
+            "customer_id": "cust_UT11",
+            "product": "Prepaid wallet",
+            "customer_name": "Arjun Bhat",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_UT12",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_UT12",
+          "entity": "payment",
+          "amount": 89900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_UT12",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Hotel hold",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "nisha@okaxis",
+          "email": "nisha@example.com",
+          "contact": "+919811000012",
+          "notes": {
+            "customer_id": "cust_UT12",
+            "product": "Hotel hold",
+            "customer_name": "Nisha Verma",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment processing failed because of a technical error at the gateway.",
+          "error_source": "gateway",
+          "error_step": "payment_authorization",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_NSF01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_NSF01",
+          "entity": "payment",
+          "amount": 249900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_NSF01",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Rent share",
+          "card_id": "card_4242xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "neel@example.com",
+          "contact": "+919822000001",
+          "notes": {
+            "customer_id": "cust_NSF01",
+            "product": "Rent share",
+            "customer_name": "Neel Sharma",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment failed due to insufficient funds in the customer account.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "insufficient_funds",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_4242xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "4242",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_NSF02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_NSF02",
+          "entity": "payment",
+          "amount": 79900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_NSF02",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Course installment",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "kavya@okicici",
+          "email": "kavya@example.com",
+          "contact": "+919822000002",
+          "notes": {
+            "customer_id": "cust_NSF02",
+            "product": "Course installment",
+            "customer_name": "Kavya Menon",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment failed due to insufficient funds in the customer account.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "insufficient_funds",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_NSF03",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_NSF03",
+          "entity": "payment",
+          "amount": 159900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_NSF03",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Insurance premium",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "harsh@okicici",
+          "email": "harsh@example.com",
+          "contact": "+919822000003",
+          "notes": {
+            "customer_id": "cust_NSF03",
+            "product": "Insurance premium",
+            "customer_name": "Harsh Patel",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment failed due to insufficient funds in the customer account.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "insufficient_funds",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_NSF04",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_NSF04",
+          "entity": "payment",
+          "amount": 49900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_NSF04",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "SaaS monthly",
+          "card_id": "card_4242xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "ritu@example.com",
+          "contact": "+919822000004",
+          "notes": {
+            "customer_id": "cust_NSF04",
+            "product": "SaaS monthly",
+            "customer_name": "Ritu Agarwal",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment failed due to insufficient funds in the customer account.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "insufficient_funds",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_4242xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "4242",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_NSF05",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_NSF05",
+          "entity": "payment",
+          "amount": 329900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_NSF05",
+          "invoice_id": null,
+          "international": false,
+          "method": "netbanking",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "School fees",
+          "card_id": null,
+          "bank": "HDFC",
+          "wallet": null,
+          "vpa": null,
+          "email": "amit@example.com",
+          "contact": "+919822000005",
+          "notes": {
+            "customer_id": "cust_NSF05",
+            "product": "School fees",
+            "customer_name": "Amit Kulkarni",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment failed due to insufficient funds in the customer account.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "insufficient_funds",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_NSF06",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_NSF06",
+          "entity": "payment",
+          "amount": 19900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_NSF06",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "D2C refill",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "pooja@okicici",
+          "email": "pooja@example.com",
+          "contact": "+919822000006",
+          "notes": {
+            "customer_id": "cust_NSF06",
+            "product": "D2C refill",
+            "customer_name": "Pooja Jain",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment failed due to insufficient funds in the customer account.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "insufficient_funds",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_NSF07",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_NSF07",
+          "entity": "payment",
+          "amount": 89900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_NSF07",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Broadband bill",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "dev@okicici",
+          "email": "dev@example.com",
+          "contact": "+919822000007",
+          "notes": {
+            "customer_id": "cust_NSF07",
+            "product": "Broadband bill",
+            "customer_name": "Dev Reddy",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment failed due to insufficient funds in the customer account.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "insufficient_funds",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_NSF08",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_NSF08",
+          "entity": "payment",
+          "amount": 119900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_NSF08",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Clinic package",
+          "card_id": "card_4242xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "sneha@example.com",
+          "contact": "+919822000008",
+          "notes": {
+            "customer_id": "cust_NSF08",
+            "product": "Clinic package",
+            "customer_name": "Sneha Iyer",
+            "consent_whatsapp": "false",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment failed due to insufficient funds in the customer account.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "insufficient_funds",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_4242xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "4242",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_CD01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_CD01",
+          "entity": "payment",
+          "amount": 459900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_CD01",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Camera body",
+          "card_id": "card_1111xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "rahul@example.com",
+          "contact": "+919833000001",
+          "notes": {
+            "customer_id": "cust_CD01",
+            "product": "Camera body",
+            "customer_name": "Rahul Bose",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "The issuing bank declined this card transaction.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "issuer_declined",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_1111xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "1111",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_CD02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_CD02",
+          "entity": "payment",
+          "amount": 29900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_CD02",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Makeup kit",
+          "card_id": "card_4444xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "tanya@example.com",
+          "contact": "+919833000002",
+          "notes": {
+            "customer_id": "cust_CD02",
+            "product": "Makeup kit",
+            "customer_name": "Tanya Singh",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "The issuing bank declined this card transaction.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "do_not_honor",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_4444xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "4444",
+            "network": "Mastercard",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_CD03",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_CD03",
+          "entity": "payment",
+          "amount": 189900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_CD03",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Watch",
+          "card_id": "card_5555xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "manish@example.com",
+          "contact": "+919833000003",
+          "notes": {
+            "customer_id": "cust_CD03",
+            "product": "Watch",
+            "customer_name": "Manish Rao",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "The issuing bank declined this card transaction.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "card_declined",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_5555xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "5555",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_CD04",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_CD04",
+          "entity": "payment",
+          "amount": 64900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_CD04",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Headphones",
+          "card_id": "card_2222xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "lata@example.com",
+          "contact": "+919833000004",
+          "notes": {
+            "customer_id": "cust_CD04",
+            "product": "Headphones",
+            "customer_name": "Lata Pillai",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "The issuing bank declined this card transaction.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "transaction_not_allowed",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_2222xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "2222",
+            "network": "RuPay",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_CD05",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_CD05",
+          "entity": "payment",
+          "amount": 99900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_CD05",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Airline seat",
+          "card_id": "card_8888xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "omar@example.com",
+          "contact": "+919833000005",
+          "notes": {
+            "customer_id": "cust_CD05",
+            "product": "Airline seat",
+            "customer_name": "Omar Sheikh",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "The issuing bank declined this card transaction.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "issuer_declined",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_8888xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "8888",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_CD06",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_CD06",
+          "entity": "payment",
+          "amount": 54900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_CD06",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Kitchen appliance",
+          "card_id": "card_0007xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "geeta@example.com",
+          "contact": "+919833000006",
+          "notes": {
+            "customer_id": "cust_CD06",
+            "product": "Kitchen appliance",
+            "customer_name": "Geeta Shah",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "The issuing bank declined this card transaction.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "card_declined",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_0007xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "0007",
+            "network": "Mastercard",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_OTP01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_OTP01",
+          "entity": "payment",
+          "amount": 39900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_OTP01",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "UPI collect",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "siddharth@ybl",
+          "email": "siddharth@example.com",
+          "contact": "+919844000001",
+          "notes": {
+            "customer_id": "cust_OTP01",
+            "product": "UPI collect",
+            "customer_name": "Siddharth Jain",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Authentication failed due to incorrect OTP.",
+          "error_source": "customer",
+          "error_step": "payment_authentication",
+          "error_reason": "invalid_otp",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_OTP02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_OTP02",
+          "entity": "payment",
+          "amount": 149900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_OTP02",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Card checkout",
+          "card_id": "card_0153xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "alia@example.com",
+          "contact": "+919844000002",
+          "notes": {
+            "customer_id": "cust_OTP02",
+            "product": "Card checkout",
+            "customer_name": "Alia Fernandes",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Authentication failed due to incorrect OTP.",
+          "error_source": "customer",
+          "error_step": "payment_authentication",
+          "error_reason": "incorrect_otp",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_0153xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "0153",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_OTP03",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_OTP03",
+          "entity": "payment",
+          "amount": 24900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_OTP03",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Wallet top-up",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "varun@ybl",
+          "email": "varun@example.com",
+          "contact": "+919844000003",
+          "notes": {
+            "customer_id": "cust_OTP03",
+            "product": "Wallet top-up",
+            "customer_name": "Varun Sethi",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Authentication failed due to incorrect OTP.",
+          "error_source": "customer",
+          "error_step": "payment_authentication",
+          "error_reason": "authentication_failed",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_OTP04",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_OTP04",
+          "entity": "payment",
+          "amount": 79900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_OTP04",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Checkout OTP",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "rhea@ybl",
+          "email": "rhea@example.com",
+          "contact": "+919844000004",
+          "notes": {
+            "customer_id": "cust_OTP04",
+            "product": "Checkout OTP",
+            "customer_name": "Rhea Kapoor",
+            "consent_whatsapp": "false",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Authentication failed due to incorrect OTP.",
+          "error_source": "customer",
+          "error_step": "payment_authentication",
+          "error_reason": "user_dropped_authentication",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_OTP05",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_OTP05",
+          "entity": "payment",
+          "amount": 119900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_OTP05",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "EMI auth",
+          "card_id": "card_0153xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "kunal@example.com",
+          "contact": "+919844000005",
+          "notes": {
+            "customer_id": "cust_OTP05",
+            "product": "EMI auth",
+            "customer_name": "Kunal Bose",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Authentication failed due to incorrect OTP.",
+          "error_source": "customer",
+          "error_step": "payment_authentication",
+          "error_reason": "invalid_otp",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_0153xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "0153",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_AB01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "checkout.abandoned",
+    "contains": [
+      "checkout"
+    ],
+    "payload": {
+      "checkout": {
+        "entity": {
+          "id": "chk_AB01",
+          "order_id": "order_AB01",
+          "amount": 45900,
+          "currency": "INR",
+          "method_hint": "upi",
+          "status": "abandoned",
+          "email": "yash@example.com",
+          "contact": "+919855000001",
+          "notes": {
+            "customer_id": "cust_AB01",
+            "product": "Cart: protein + shaker",
+            "customer_name": "Yash Malhotra",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "minutes_idle": "18"
+          },
+          "abandoned_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_AB02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "checkout.abandoned",
+    "contains": [
+      "checkout"
+    ],
+    "payload": {
+      "checkout": {
+        "entity": {
+          "id": "chk_AB02",
+          "order_id": "order_AB02",
+          "amount": 129900,
+          "currency": "INR",
+          "method_hint": "card",
+          "status": "abandoned",
+          "email": "ira@example.com",
+          "contact": "+919855000002",
+          "notes": {
+            "customer_id": "cust_AB02",
+            "product": "Cart: annual plan",
+            "customer_name": "Ira Banerjee",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "minutes_idle": "18"
+          },
+          "abandoned_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_AB03",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "checkout.abandoned",
+    "contains": [
+      "checkout"
+    ],
+    "payload": {
+      "checkout": {
+        "entity": {
+          "id": "chk_AB03",
+          "order_id": "order_AB03",
+          "amount": 21900,
+          "currency": "INR",
+          "method_hint": "upi",
+          "status": "abandoned",
+          "email": "farhan@example.com",
+          "contact": "+919855000003",
+          "notes": {
+            "customer_id": "cust_AB03",
+            "product": "Cart: t-shirt",
+            "customer_name": "Farhan Qureshi",
+            "consent_whatsapp": "false",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "minutes_idle": "18"
+          },
+          "abandoned_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_AB04",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "checkout.abandoned",
+    "contains": [
+      "checkout"
+    ],
+    "payload": {
+      "checkout": {
+        "entity": {
+          "id": "chk_AB04",
+          "order_id": "order_AB04",
+          "amount": 89900,
+          "currency": "INR",
+          "method_hint": "upi",
+          "status": "abandoned",
+          "email": "simran@example.com",
+          "contact": "+919855000004",
+          "notes": {
+            "customer_id": "cust_AB04",
+            "product": "Cart: two skincare kits",
+            "customer_name": "Simran Kaur",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "minutes_idle": "18"
+          },
+          "abandoned_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_AB05",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "checkout.abandoned",
+    "contains": [
+      "checkout"
+    ],
+    "payload": {
+      "checkout": {
+        "entity": {
+          "id": "chk_AB05",
+          "order_id": "order_AB05",
+          "amount": 159900,
+          "currency": "INR",
+          "method_hint": "card",
+          "status": "abandoned",
+          "email": "nikhil@example.com",
+          "contact": "+919855000005",
+          "notes": {
+            "customer_id": "cust_AB05",
+            "product": "Cart: noise-cancel headphones",
+            "customer_name": "Nikhil Rao",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "minutes_idle": "18"
+          },
+          "abandoned_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_SP01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "subscription.pending",
+    "contains": [
+      "subscription",
+      "payment"
+    ],
+    "payload": {
+      "subscription": {
+        "entity": {
+          "id": "sub_SP01",
+          "entity": "subscription",
+          "status": "pending",
+          "plan_id": "plan_pro_monthly",
+          "total_count": 12,
+          "paid_count": 3,
+          "remaining_count": 9,
+          "customer_id": "cust_SP01"
+        }
+      },
+      "payment": {
+        "entity": {
+          "id": "pay_SP01",
+          "entity": "payment",
+          "amount": 79900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_SP01",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Pro monthly",
+          "card_id": "card_0153xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "aditi@example.com",
+          "contact": "+919866000001",
+          "notes": {
+            "customer_id": "cust_SP01",
+            "product": "Pro monthly",
+            "customer_name": "Aditi Rao",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "subscription_id": "sub_SP01"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Auto-charge failed. Subscription moved to pending.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "card_declined",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_0153xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "0153",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_SP02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "subscription.pending",
+    "contains": [
+      "subscription",
+      "payment"
+    ],
+    "payload": {
+      "subscription": {
+        "entity": {
+          "id": "sub_SP02",
+          "entity": "subscription",
+          "status": "pending",
+          "plan_id": "plan_pro_monthly",
+          "total_count": 12,
+          "paid_count": 3,
+          "remaining_count": 9,
+          "customer_id": "cust_SP02"
+        }
+      },
+      "payment": {
+        "entity": {
+          "id": "pay_SP02",
+          "entity": "payment",
+          "amount": 149900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_SP02",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Family plan",
+          "card_id": "card_0153xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "mohit@example.com",
+          "contact": "+919866000002",
+          "notes": {
+            "customer_id": "cust_SP02",
+            "product": "Family plan",
+            "customer_name": "Mohit Jain",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "subscription_id": "sub_SP02"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Auto-charge failed. Subscription moved to pending.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "card_declined",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_0153xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "0153",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_SP03",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "subscription.pending",
+    "contains": [
+      "subscription",
+      "payment"
+    ],
+    "payload": {
+      "subscription": {
+        "entity": {
+          "id": "sub_SP03",
+          "entity": "subscription",
+          "status": "pending",
+          "plan_id": "plan_pro_monthly",
+          "total_count": 12,
+          "paid_count": 3,
+          "remaining_count": 9,
+          "customer_id": "cust_SP03"
+        }
+      },
+      "payment": {
+        "entity": {
+          "id": "pay_SP03",
+          "entity": "payment",
+          "amount": 49900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_SP03",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Creator plan",
+          "card_id": "card_0153xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "leela@example.com",
+          "contact": "+919866000003",
+          "notes": {
+            "customer_id": "cust_SP03",
+            "product": "Creator plan",
+            "customer_name": "Leela Nair",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "subscription_id": "sub_SP03"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Auto-charge failed. Subscription moved to pending.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "card_declined",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_0153xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "0153",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_SH01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "subscription.halted",
+    "contains": [
+      "subscription",
+      "payment"
+    ],
+    "payload": {
+      "subscription": {
+        "entity": {
+          "id": "sub_SH01",
+          "entity": "subscription",
+          "status": "halted",
+          "plan_id": "plan_pro_monthly",
+          "total_count": 12,
+          "paid_count": 4,
+          "remaining_count": 8,
+          "customer_id": "cust_SH01"
+        }
+      },
+      "payment": {
+        "entity": {
+          "id": "pay_SH01",
+          "entity": "payment",
+          "amount": 79900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_SH01",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Pro monthly",
+          "card_id": "card_9999xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "gaurav@example.com",
+          "contact": "+919877000001",
+          "notes": {
+            "customer_id": "cust_SH01",
+            "product": "Pro monthly",
+            "customer_name": "Gaurav Kumar",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "4",
+            "locale": "en",
+            "subscription_id": "sub_SH01"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "All automatic retries exhausted. Subscription halted.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "card_declined",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_9999xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "9999",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_SH02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "subscription.halted",
+    "contains": [
+      "subscription",
+      "payment"
+    ],
+    "payload": {
+      "subscription": {
+        "entity": {
+          "id": "sub_SH02",
+          "entity": "subscription",
+          "status": "halted",
+          "plan_id": "plan_pro_monthly",
+          "total_count": 12,
+          "paid_count": 4,
+          "remaining_count": 8,
+          "customer_id": "cust_SH02"
+        }
+      },
+      "payment": {
+        "entity": {
+          "id": "pay_SH02",
+          "entity": "payment",
+          "amount": 199900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_SH02",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Studio plan",
+          "card_id": "card_9999xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "bhavna@example.com",
+          "contact": "+919877000002",
+          "notes": {
+            "customer_id": "cust_SH02",
+            "product": "Studio plan",
+            "customer_name": "Bhavna Shah",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "4",
+            "locale": "en",
+            "subscription_id": "sub_SH02"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "All automatic retries exhausted. Subscription halted.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "card_declined",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_9999xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "9999",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_MR01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_MR01",
+          "entity": "payment",
+          "amount": 79900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_MR01",
+          "invoice_id": null,
+          "international": false,
+          "method": "emandate",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Pro monthly",
+          "card_id": null,
+          "bank": "HDFC",
+          "wallet": null,
+          "vpa": null,
+          "email": "pankaj@example.com",
+          "contact": "+919888000001",
+          "notes": {
+            "customer_id": "cust_MR01",
+            "product": "Pro monthly",
+            "customer_name": "Pankaj Singh",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "subscription_id": "sub_MR01"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Customer cancelled the mandate from their bank.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "mandate_revoked",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_MR02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_MR02",
+          "entity": "payment",
+          "amount": 49900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_MR02",
+          "invoice_id": null,
+          "international": false,
+          "method": "emandate",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "News pass",
+          "card_id": null,
+          "bank": "HDFC",
+          "wallet": null,
+          "vpa": null,
+          "email": "chitra@example.com",
+          "contact": "+919888000002",
+          "notes": {
+            "customer_id": "cust_MR02",
+            "product": "News pass",
+            "customer_name": "Chitra Menon",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "subscription_id": "sub_MR02"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Customer cancelled the mandate from their bank.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "cancelled_by_customer",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_MR03",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_MR03",
+          "entity": "payment",
+          "amount": 129900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_MR03",
+          "invoice_id": null,
+          "international": false,
+          "method": "emandate",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Gym annual",
+          "card_id": null,
+          "bank": "HDFC",
+          "wallet": null,
+          "vpa": null,
+          "email": "ravi@example.com",
+          "contact": "+919888000003",
+          "notes": {
+            "customer_id": "cust_MR03",
+            "product": "Gym annual",
+            "customer_name": "Ravi Pillai",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "subscription_id": "sub_MR03"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Customer cancelled the mandate from their bank.",
+          "error_source": "customer",
+          "error_step": "payment_authorization",
+          "error_reason": "emandate_cancelled",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_DNR01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_DNR01",
+          "entity": "payment",
+          "amount": 89900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_DNR01",
+          "invoice_id": null,
+          "international": false,
+          "method": "card",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Fraud desk case A",
+          "card_id": "card_0000xPayR",
+          "bank": null,
+          "wallet": null,
+          "vpa": null,
+          "email": "risk.review@example.com",
+          "contact": "+919899000001",
+          "notes": {
+            "customer_id": "cust_DNR01",
+            "product": "Fraud desk case A",
+            "customer_name": "Redacted",
+            "consent_whatsapp": "false",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "risk_flag": "true"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment blocked. Do not retry this instrument.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "stolen_or_lost_card",
+          "created_at": 1724323800,
+          "card": {
+            "id": "card_0000xPayR",
+            "entity": "card",
+            "name": "",
+            "last4": "0000",
+            "network": "Visa",
+            "type": "debit",
+            "issuer": "HDFC",
+            "international": false,
+            "emi": false
+          }
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_DNR02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_DNR02",
+          "entity": "payment",
+          "amount": 259900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_DNR02",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Velocity spike case",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "redacted@okicici",
+          "email": "risk.review@example.com",
+          "contact": "+919899000002",
+          "notes": {
+            "customer_id": "cust_DNR02",
+            "product": "Velocity spike case",
+            "customer_name": "Redacted",
+            "consent_whatsapp": "false",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "risk_flag": "true"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment blocked. Do not retry this instrument.",
+          "error_source": "bank",
+          "error_step": "payment_authorization",
+          "error_reason": "suspected_fraud",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_DNR03",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_DNR03",
+          "entity": "payment",
+          "amount": 149900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_DNR03",
+          "invoice_id": null,
+          "international": false,
+          "method": "netbanking",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Blocked account",
+          "card_id": null,
+          "bank": "HDFC",
+          "wallet": null,
+          "vpa": null,
+          "email": "risk.review@example.com",
+          "contact": "+919899000003",
+          "notes": {
+            "customer_id": "cust_DNR03",
+            "product": "Blocked account",
+            "customer_name": "Redacted",
+            "consent_whatsapp": "false",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "risk_flag": "true"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment blocked. Do not retry this instrument.",
+          "error_source": "issuer",
+          "error_step": "payment_authorization",
+          "error_reason": "bank_account_blocked",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_AR01",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_AR01",
+          "entity": "payment",
+          "amount": 49900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_AR01",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Already captured order",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "resolved@ybl",
+          "email": "resolved@example.com",
+          "contact": "+919800000001",
+          "notes": {
+            "customer_id": "cust_AR01",
+            "product": "Already captured order",
+            "customer_name": "Resolved User",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment already processed or later captured.",
+          "error_source": "business",
+          "error_step": "payment_capture",
+          "error_reason": "payment_already_processed",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_AR02",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_AR02",
+          "entity": "payment",
+          "amount": 79900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_AR02",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Already captured order",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "resolved@ybl",
+          "email": "resolved@example.com",
+          "contact": "+919800000002",
+          "notes": {
+            "customer_id": "cust_AR02",
+            "product": "Already captured order",
+            "customer_name": "Resolved User",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "BAD_REQUEST_ERROR",
+          "error_description": "Payment already processed or later captured.",
+          "error_source": "business",
+          "error_step": "payment_capture",
+          "error_reason": "duplicate_payment",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  },
+  {
+    "id": "evt_AR03",
+    "entity": "event",
+    "account_id": "acc_PayRecoverDemo",
+    "event": "payment.failed",
+    "contains": [
+      "payment"
+    ],
+    "payload": {
+      "payment": {
+        "entity": {
+          "id": "pay_AR03",
+          "entity": "payment",
+          "amount": 129900,
+          "currency": "INR",
+          "status": "failed",
+          "order_id": "order_AR03",
+          "invoice_id": null,
+          "international": false,
+          "method": "upi",
+          "amount_refunded": 0,
+          "refund_status": null,
+          "captured": false,
+          "description": "Already captured order",
+          "card_id": null,
+          "bank": null,
+          "wallet": null,
+          "vpa": "resolved@ybl",
+          "email": "resolved@example.com",
+          "contact": "+919800000003",
+          "notes": {
+            "customer_id": "cust_AR03",
+            "product": "Already captured order",
+            "customer_name": "Resolved User",
+            "consent_whatsapp": "true",
+            "opted_out": "false",
+            "attempt_n": "1",
+            "locale": "en",
+            "already_captured": "true"
+          },
+          "fee": null,
+          "tax": null,
+          "error_code": "GATEWAY_ERROR",
+          "error_description": "Payment already processed or later captured.",
+          "error_source": "business",
+          "error_step": "payment_capture",
+          "error_reason": "gateway_technical_error",
+          "created_at": 1724323800
+        }
+      }
+    },
+    "created_at": 1724323800
+  }
+]
