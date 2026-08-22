@@ -4,6 +4,8 @@ Diagnose failed payments. Recover the ones that should come back. Stop the ones 
 
 Razorpay AI Buildathon — **Track 03 · AI Revenue Recovery**.
 
+Repo: https://github.com/shwetgaur/payrecover
+
 Live demo (when deployed): dashboard + **Run recovery on sample batch (50)**.
 
 ## Why this exists
