@@ -6,7 +6,7 @@ Razorpay AI Buildathon — **Track 03 · AI Revenue Recovery**.
 
 Repo: https://github.com/shwetgaur/payrecover
 
-Live demo (when deployed): dashboard + **Run recovery on sample batch (50)**.
+Live demo (when deployed): dashboard on Vercel + API on Render.
 
 ## Why this exists
 
@@ -86,3 +86,45 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and the in-app `/architecture` 
 Pitch script: [docs/PITCH.md](docs/PITCH.md).
 
 I also ship production RAG. This repo is the Track 03 product.
+
+## Deploy (Vercel + Render + Groq)
+
+PayRecover splits into a **Next.js console on Vercel** and a **FastAPI API on Render** with **Groq** for live rationale + customer copy (rules still run if Groq is down).
+
+### 1. API on Render (Blueprint)
+
+1. [Render dashboard](https://dashboard.render.com) → **New** → **Blueprint**
+2. Connect repo `shwetgaur/payrecover` (branch `main`)
+3. Render creates **payrecover-api** + **Postgres** from `render.yaml`
+4. Set secret **`GROQ_API_KEY`** (from [console.groq.com](https://console.groq.com/keys))
+5. After deploy, confirm: `GET https://payrecover-api.onrender.com/health` → `"llm": "live"`
+
+Optional env overrides: `GROQ_MODEL`, `GROQ_FALLBACK_MODEL` (defaults in `render.yaml`).
+
+### 2. Console on Vercel
+
+1. [vercel.com/new](https://vercel.com/new) → import `shwetgaur/payrecover`
+2. **Root Directory:** `web`
+3. **Environment variable:**
+
+| Key | Value |
+|-----|--------|
+| `NEXT_PUBLIC_API_URL` | `https://payrecover-api.onrender.com` |
+
+4. Deploy → open the Vercel URL → **Run recovery on sample batch (50)**
+
+CORS: the API auto-allows `*.vercel.app` when `CORS_ALLOW_VERCEL=true` (set in `render.yaml`).
+
+### 3. Keep-alive (optional)
+
+`.github/workflows/render-keep-alive.yml` pings `/health` every 14 minutes so the free Render API stays warm (public repo = unlimited Actions).
+
+### Local dev env
+
+```powershell
+# API — backend/
+GROQ_API_KEY=gsk_...
+
+# Web — web/
+NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
+```

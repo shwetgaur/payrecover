@@ -13,12 +13,13 @@ class Base(DeclarativeBase):
 def _engine_url() -> str:
     settings = get_settings()
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    return settings.database_url
+    return settings.database_url_resolved
 
 
+_engine_url = _engine_url()
 engine = create_engine(
-    _engine_url(),
-    connect_args={"check_same_thread": False} if _engine_url().startswith("sqlite") else {},
+    _engine_url,
+    connect_args={"check_same_thread": False} if _engine_url.startswith("sqlite") else {},
 )
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 
