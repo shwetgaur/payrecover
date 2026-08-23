@@ -31,7 +31,6 @@ From `python backend/eval/run_eval.py` (no Groq required):
 ## Stack
 
 - API: FastAPI + Pydantic + SQLAlchemy
-- API: FastAPI + Pydantic + SQLAlchemy
 - Agent: LangGraph (diagnose → policy → plan → compose → act → observe)
 - LLM: Groq via LangChain (`ChatGroq`), with deterministic rule fallback
 - UI: Next.js
