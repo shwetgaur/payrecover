@@ -2,8 +2,6 @@ from __future__ import annotations
 
 from typing import Any, TypedDict
 
-from langgraph.graph import END, StateGraph
-
 from app.adapters import execute_action
 from app.catalog import match_rule
 from app.llm import classify_unknown, write_rationale
@@ -130,7 +128,13 @@ def observe_node(state: AgentState) -> AgentState:
     return state
 
 
+_GRAPH = None
+
+
 def build_graph():
+    # Lazy import — LangGraph is only loaded on first agent run, not at API import.
+    from langgraph.graph import END, StateGraph
+
     graph = StateGraph(AgentState)
     graph.add_node("diagnose", diagnose_node)
     graph.add_node("policy", policy_node)
@@ -144,9 +148,6 @@ def build_graph():
     graph.add_edge("act", "observe")
     graph.add_edge("observe", END)
     return graph.compile()
-
-
-_GRAPH = None
 
 
 def get_graph():

@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=str(BACKEND_ROOT.parent / ".env"), extra="ignore")
 
     groq_api_key: str = ""
-    groq_model: str = "llama-3.3-70b-versatile"
+    groq_model: str = "llama-3.1-8b-instant"
     groq_fallback_model: str = "llama-3.1-8b-instant"
     razorpay_webhook_secret: str = ""
     database_url: str = f"sqlite:///{(DATA_DIR / 'payrecover.db').as_posix()}"

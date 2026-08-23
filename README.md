@@ -31,8 +31,9 @@ From `python backend/eval/run_eval.py` (no Groq required):
 ## Stack
 
 - API: FastAPI + Pydantic + SQLAlchemy
+- API: FastAPI + Pydantic + SQLAlchemy
 - Agent: LangGraph (diagnose → policy → plan → compose → act → observe)
-- LLM: Groq Llama, with a deterministic rule fallback
+- LLM: Groq via LangChain (`ChatGroq`), with deterministic rule fallback
 - UI: Next.js
 - Data: 50 synthetic events in Razorpay webhook shape
 
@@ -114,6 +115,8 @@ Optional env overrides: `GROQ_MODEL`, `GROQ_FALLBACK_MODEL` (defaults in `render
 4. Deploy → open the Vercel URL → **Run recovery on sample batch (50)**
 
 CORS: the API auto-allows `*.vercel.app` when `CORS_ALLOW_VERCEL=true` (set in `render.yaml`).
+
+**Memory (Render free 512 MB):** LangGraph + LangChain-Groq stay enabled. The API reuses a single `ChatGroq` client (not one per event), lazy-loads LangGraph on first run, and gc's during batch processing. If a 50-event batch still OOMs, upgrade the API to **Render Starter** ($7/mo, 2 GB) — no need to strip the agent stack.
 
 ### 3. Keep-alive (optional)
 

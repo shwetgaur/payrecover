@@ -169,6 +169,8 @@ def process_event(
 
 
 def run_batch(db: Session, req: RunRequest, events: list[dict] | None = None) -> RunOut:
+    import gc
+
     faults = get_faults(db)
     llm_down = faults.llm == "down"
     whatsapp_timeout = faults.whatsapp == "timeout"
@@ -184,8 +186,9 @@ def run_batch(db: Session, req: RunRequest, events: list[dict] | None = None) ->
     db.add(run)
     db.flush()
     payload = events if events is not None else load_sample_batch()
-    cases = [
-        process_event(
+    case_ids: list[str] = []
+    for i, raw in enumerate(payload):
+        case = process_event(
             db,
             raw,
             run,
@@ -194,8 +197,13 @@ def run_batch(db: Session, req: RunRequest, events: list[dict] | None = None) ->
             locale=req.locale,
             policy_mode=req.policy_mode,
         )
-        for raw in payload
-    ]
+        case_ids.append(case.id)
+        if (i + 1) % 5 == 0:
+            db.flush()
+            db.expire_all()
+            gc.collect()
+    db.refresh(run)
+    cases = list(run.cases)
     metrics = _metrics(cases, run.degraded)
     run.at_risk_paise = metrics.at_risk_paise
     run.recovered_paise = metrics.recovered_paise

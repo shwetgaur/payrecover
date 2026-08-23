@@ -2,9 +2,14 @@ from __future__ import annotations
 
 import json
 import logging
+from functools import lru_cache
+from typing import TYPE_CHECKING
 
 from app.config import get_settings
 from app.schemas import Diagnosis, DiagnosisClass, Locale, RevenueAtRisk
+
+if TYPE_CHECKING:
+    from langchain_groq import ChatGroq
 
 log = logging.getLogger("payrecover.llm")
 CLASS_LIST = ", ".join(c.value for c in DiagnosisClass)
@@ -14,32 +19,40 @@ def groq_available(llm_down: bool) -> bool:
     return bool(get_settings().groq_api_key) and not llm_down
 
 
+@lru_cache(maxsize=1)
+def _primary_model() -> ChatGroq:
+    from langchain_groq import ChatGroq
+
+    settings = get_settings()
+    return ChatGroq(api_key=settings.groq_api_key, model=settings.groq_model, temperature=0.2)
+
+
+@lru_cache(maxsize=1)
+def _fallback_model() -> ChatGroq:
+    from langchain_groq import ChatGroq
+
+    settings = get_settings()
+    return ChatGroq(
+        api_key=settings.groq_api_key,
+        model=settings.groq_fallback_model,
+        temperature=0.1,
+    )
+
+
 def _chat(system: str, user: str) -> str | None:
     settings = get_settings()
     if not settings.groq_api_key:
         return None
-    try:
-        from langchain_core.messages import HumanMessage, SystemMessage
-        from langchain_groq import ChatGroq
+    from langchain_core.messages import HumanMessage, SystemMessage
 
-        model = ChatGroq(api_key=settings.groq_api_key, model=settings.groq_model, temperature=0.2)
-        resp = model.invoke([SystemMessage(content=system), HumanMessage(content=user)])
-        return str(resp.content or "").strip()
-    except Exception:
+    messages = [SystemMessage(content=system), HumanMessage(content=user)]
+    for getter in (_primary_model, _fallback_model):
         try:
-            from langchain_core.messages import HumanMessage, SystemMessage
-            from langchain_groq import ChatGroq
-
-            model = ChatGroq(
-                api_key=settings.groq_api_key,
-                model=settings.groq_fallback_model,
-                temperature=0.1,
-            )
-            resp = model.invoke([SystemMessage(content=system), HumanMessage(content=user)])
+            resp = getter().invoke(messages)
             return str(resp.content or "").strip()
         except Exception as exc:
-            log.warning("groq unavailable: %s", exc)
-            return None
+            log.warning("groq unavailable model=%s: %s", getter.__name__, exc)
+    return None
 
 
 def classify_unknown(rar: RevenueAtRisk, llm_down: bool) -> Diagnosis | None:
@@ -99,9 +112,3 @@ def compose_customer_copy(
         f"Language: {lang}. Max 60 words.",
         f"class={klass} action={action} amount=₹{amount_paise / 100:.2f}",
     )
-
-
-classify_unknown = classify_unknown
-write_rationale = write_rationale
-compose_customer_copy = compose_customer_copy
-groq_available = groq_available
