@@ -31,7 +31,7 @@ def startup() -> None:
     init_db()
 
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health(db: Session = Depends(get_session)) -> dict:
     faults = get_faults(db)
     return {
